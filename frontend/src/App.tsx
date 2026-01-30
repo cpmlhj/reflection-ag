@@ -1,17 +1,14 @@
-import { HealthStatus } from '@/components/HealthStatus'
-import './App.css'
+import { HealthStatus } from "@/components/HealthStatus"
 
 function App() {
   return (
-    <>
-      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
-        <h1>Reflection Agent</h1>
-        <p>Full-stack application with React + FastAPI</p>
-        <div style={{ marginTop: '30px' }}>
-          <HealthStatus />
-        </div>
+    <div className="max-w-2xl mx-auto p-5">
+      <h1>Reflection Agent</h1>
+      <p>Full-stack application with React + FastAPI</p>
+      <div className="mt-8">
+        <HealthStatus />
       </div>
-    </>
+    </div>
   )
 }
 
