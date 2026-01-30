@@ -21,6 +21,7 @@ class OverAllState(TypedDict):
     search_query: Annotated[List[str], operator.add]
     web_search_results: Annotated[List[QueryResult], operator.add]
     max_research_count: int
+    initial_search_query_count: int
     research_loop_count: int
 
 
@@ -34,3 +35,4 @@ class ReflectionState(TypedDict):
     knowledge_gap: str
     follow_up_queries: Annotated[List[str], operator.add]
     research_loop_count: int
+    number_of_ran_queries: int

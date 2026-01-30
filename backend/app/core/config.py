@@ -18,6 +18,16 @@ class Settings(BaseSettings):
     HOST: str = "0.0.0.0"
     PORT: int = 8000
 
+    # External API Keys
+    TAVILY_API_KEY: str
+    API_KEY: str
+    BASE_URL: str = "https://openrouter.ai/api/v1"
+
+
+    # Base Config
+    number_of_initial_queries: int = 3
+    max_research_loops: int = 2
+
     class Config:
         case_sensitive = True
         env_file = ".env"
